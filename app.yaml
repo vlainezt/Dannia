@@ -1,0 +1,18 @@
+runtime: custom
+env: flex
+
+network:
+    session_affinity: true
+env_variables:
+    PROJECT_ID: "dannia-bsda"
+    LANGUAGE_CODE: "es"
+    ENCODING: "AUDIO_ENCODING_LINEAR_16"
+    SAMPLE_RATE_HERZ: "16000"
+    SINGLE_UTTERANCE: "false"
+    SPEECH_ENCODING: "LINEAR16"
+    SSML_GENDER: "FEMALE"
+automatic_scaling:
+    min_num_instances: 1
+    max_num_instances: 5
+    cpu_utilization:
+        target_utilization: 0.5
