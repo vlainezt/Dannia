@@ -6,7 +6,7 @@ export class FulfillmentService {
     private defaultMessage: string;
 
     constructor() {
-        this.defaultMessage = 'Presione el botón \'Conversar\'';
+        this.defaultMessage = 'Presione el botón Conversar';
         this.matches = [];
         this.fulfillment = {
             UTTERANCE: this.defaultMessage,
